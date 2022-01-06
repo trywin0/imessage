@@ -1,0 +1,256 @@
+body {
+    font-family: sans-serif;
+}
+
+.phone {
+    z-index: 1;
+    height: 95vh;
+    position: absolute;
+    width: fit-content;
+}
+
+.color-box {
+    background-color: #F4F4F4;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: 2px solid rgb(216, 216, 216);
+
+    width: 95%;
+    margin-left: 5px;
+    height: 175px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+
+.timestamp>* {
+    height: 1.3em;
+}
+
+
+
+.message {
+    font-weight: 400;
+    border-radius: 15px;
+    max-width: 70%;
+    height: auto;
+    padding: 7px;
+    margin: 0;
+    padding-inline: 15px;
+}
+
+
+.re>.msg-drop {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #E6E5EB;
+    transform: rotate(230deg);
+
+}
+
+.se>.msg-drop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #057AFF;
+    transform: rotate(130deg);
+
+}
+
+
+
+
+
+
+.messages {
+    direction: ltr;
+    overflow-y: auto;
+    height: 67.5vh;
+    margin-top: 52px;
+    padding-bottom: 40px;
+}
+
+.send {
+    cursor: pointer;
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+    color: #fff;
+    background-color: #057AFF;
+    border-radius: 50%;
+    font-weight: lighter;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.message.re {
+    margin-left: 5%;
+    position: relative;
+    float: left;
+    clear: both;
+    background-color: #E6E5EB;
+}
+
+.message.se {
+    color: #fff;
+    position: relative;
+    float: right;
+    clear: both;
+    margin-right: 20px;
+    background-color: #057AFF;
+}
+
+.bottom {
+    color: rgb(182, 182, 182)
+}
+
+.phone-wrapper {
+    position: relative;
+    height: 95vh;
+    width: 47.2vh;
+    margin: 0 auto;
+}
+
+.phone-wrapper>* {
+    margin-top: 2.5vh;
+
+}
+
+.top-icon {
+    height: 19px;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+
+}
+
+.top {
+    margin-top: 10px;
+    height: 20px;
+}
+
+.spacer {
+    width: 59%;
+}
+
+.signal {
+    height: 15px;
+    width: 17px;
+}
+
+.battery {
+    transform: scale(1.5);
+}
+
+.user-nav {
+    position: relative;
+}
+
+.user-img {
+    position: relative;
+}
+
+.user-img {
+    width: 150px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.back-arrow,
+.video-button {
+    font-size: 1.6em;
+}
+
+.video-button {
+    position: absolute;
+    right: 20px;
+}
+
+.name-arrow {
+    color: rgb(199, 199, 199);
+    font-size: 0.8em;
+}
+
+.blue {
+    color: #057AFF;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.content {
+    z-index: 100000;
+    position: absolute;
+    top: 0;
+    padding: 25px 29px;
+    border-radius: 129px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    position: absolute;
+    border: 1px solid #eee;
+    transition: border 0.2s ease;
+    border-radius: 30px;
+    padding: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+/* width */
+::-webkit-scrollbar {
+    z-index: 10000;
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    transition: background 2s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(117, 117, 117);
+
+}
