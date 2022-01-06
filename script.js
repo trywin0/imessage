@@ -29,6 +29,7 @@ function createMessage(message, sentByUser){
         drop.className = "fa fa-tint msg-drop"
         msgElement.appendChild(drop)
     } else if(previousMsg.className.includes("message")) {
+        msgElement.style.marginTop = "1px"
         if(previousMsg.children[0])previousMsg.children[0].style.display="none"
         const drop = document.createElement("i")
         drop.className = "fa fa-tint msg-drop"
